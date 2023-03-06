@@ -4,8 +4,9 @@ from unittest import main
 
 prob_calculator.random.seed(95)
 #hat = prob_calculator.Hat(blue=4, red=2, green=6)
-hat = prob_calculator.Hat(red=5,blue=2)
-hat = print(hat.draw(2))
+hat = prob_calculator.Hat(blue=3,red=2,green=6)
+probability = prob_calculator.experiment(hat, expected_balls={"blue":2,"green":1}, num_balls_drawn=20, num_experiments=100)
+#hat = print(hat.draw(2))
 #probability = prob_calculator.experiment(
     #hat=hat,
     #expected_balls={"blue": 2,
